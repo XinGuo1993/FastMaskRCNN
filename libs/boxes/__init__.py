@@ -4,13 +4,13 @@
 # Licensed under The MIT License [see LICENSE for details]
 # Written by Ross Girshick
 # --------------------------------------------------------
-from . import cython_nms
-from . import cython_bbox
-import nms
-import timer
-from .anchor import anchors
-from .anchor import anchors_plane
-from .roi import roi_cropping
-from .roi import roi_cropping
-from . import cython_anchor
-from . import cython_bbox_transform
+from libs.boxes import cython_nms
+from libs.boxes import cython_bbox
+import libs.boxes.nms
+import libs.boxes.timer
+from libs.boxes.anchor import anchors
+from libs.boxes.anchor import anchors_plane
+from libs.boxes.roi import roi_cropping
+from libs.boxes.roi import roi_cropping
+from libs.boxes import cython_anchor
+from libs.boxes  import cython_bbox_transform
